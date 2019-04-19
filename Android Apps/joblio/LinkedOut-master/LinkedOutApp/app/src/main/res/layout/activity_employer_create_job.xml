@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_employer_create_job"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.christopher.linkedoutapp.EmployerCreateJob">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_weight="0"
+            android:textAppearance="@style/H1"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@+id/jobName"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccentDark"
+            android:ems="10"
+            android:hint="Name"
+            android:textColorHint="@color/colorAccentLight"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:textAppearance="@style/TextField"
+            android:inputType="text"
+            style="@style/EditTextField"
+            android:layout_weight="1"
+            android:textColor="@color/colorText" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--android:text="Keywords"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textView9"-->
+            <!--android:textAppearance="@style/H1"-->
+            <!--android:layout_marginTop="10dp" />-->
+
+        <!--<GridLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<Button-->
+                <!--android:text="3D Modeling"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/button9" />-->
+
+            <!--<Button-->
+                <!--android:text="+"-->
+                <!--android:layout_width="36dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:backgroundTint="@color/colorTextLight"-->
+                <!--android:id="@+id/button8" />-->
+
+        <!--</GridLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textAppearance="@style/H1"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:hint="Enter Description"
+            style="@style/EditTextField"
+            android:textAppearance="@style/TextField"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorAccentLight"
+            android:background="@color/colorAccentDark"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_height="5dp"
+            android:background="@color/colorAccentMid"
+            android:id="@+id/divider"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:layout_width="50dp" />
+
+        <TextView
+            android:text="Tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:layout_weight="1"
+            android:textAppearance="@style/H2"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal|center" />
+
+        <View
+            android:layout_height="5dp"
+            android:background="@color/colorAccentMid"
+            android:id="@+id/divider2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:layout_width="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:text="1."
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:textAppearance="@style/H1"
+                android:layout_width="20dp"
+                android:layout_marginRight="5dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/questions_spinner"
+                android:background="@color/colorAccentMid"
+                android:elevation="1dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:isScrollContainer="false"
+            android:layout_marginLeft="25dp">
+
+            <FrameLayout
+                android:id="@+id/contentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccentMid">
+
+            </FrameLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:text="+Add New Task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button14"
+        android:backgroundTint="@color/colorAccentLight" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorAccentMid"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelButton"
+            android:onClick="onClickCancel"/>
+
+        <Button
+            android:text="Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmJob"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

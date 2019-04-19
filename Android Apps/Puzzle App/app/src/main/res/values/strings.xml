@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProblemSolver</string>
+    <string name="Intro1">Welcome to ProblemSolver!</string>
+    <string name="Intro2">Select the problem that you wish to solve below</string>
+    <string name="FarmerTitle">Welcome to the Farmer Problem!</string>
+    <string name="PuzzleTitle">Welcome to the Puzzle Problem!</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="farmer">Farmer</string>
+    <string name="puzzle">Puzzle</string>
+
+</resources>
