@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+	<meta charset=uft-8>
+	<title>Mason Mollberg, CoD Review</title>
+	<link href='https://fonts.googleapis.com/css?family=Gudea:400,400italic|Economica:700' rel='stylesheet' type='text/css'>
+	<script src="imgSizer.js"></script>
+</head>
+
+<style type="text/css">	
+
+	*{margin:0; padding:0;}
+
+	/*  SELF-CLEARING FLOATS  */
+	#title:after,
+	#featured:after{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	
+	#ads{
+		position: absolute;
+			top: -20em;
+		width: .1%;
+		visibility: hidden;
+		overflow: hidden;
+	}
+	#ads>figure{
+		width: 1%;
+	}
+	#ads>figure>img{
+		max-width: 100%;
+	}
+	#ads>figure>figcaption{
+		font-size: .01%;
+	}
+	
+	#content{
+		width: 40%;
+		margin: 2%;
+		margin-top: 0%;
+		padding: 1%;
+		padding-top: 0%;
+		padding-left: 3%;
+		
+		text-align: left;
+	
+	}
+	#content>article>p{
+		margin-top: 2%;
+		padding: 2%;
+		
+		color: #D1D1D1;
+	}
+	#content>h2{
+		position: relative;
+			left: -12.5%;
+	
+		padding-top: .5%;
+		padding-bottom: 6%;
+		padding-left: 3%;
+		width: 50%;
+		
+		color: BLACK;
+		background-color: #3A9031;
+	}
+	#content>h3{
+		position: relative;
+			left: -12.5%;
+			
+		padding-left: 3%;
+		width: 25%;
+	}
+	#content>article>figure>img{
+		position: relative;
+			left: 25%;
+			
+		margin: 1%;
+			
+		width: 125%;
+	}
+	
+	#featured{
+		background: #065589 url("main_bg.png") repeat-y 53.333333333333333333333333333333% 0;	<!-- 2400px/4500px -->
+	}
+	#featured>h2{
+		padding-left: 5%;
+		padding-right: 1%;
+		padding-top: .5%;
+		padding-bottom: .5%;
+	}
+	#featuredR
+	{
+		width: 35%;
+		padding: 5%;
+		padding-bottom: 1%;
+		
+		margin-left: 10%;
+		
+		float: left;
+	}
+	#featuredL
+	{
+		width: 35%;
+		padding: 5%;
+		padding-bottom: 1%;
+		
+		float: left;
+	}
+	
+	#footer{
+		background-color: #B0723C;
+	}
+	
+	footer{
+		padding: 1%;
+	}
+	
+	h1{
+		color: #3A9031;
+		font-family: 'Economica', sans-serif;
+	}
+	
+	h2{
+		font-size: 1.5em;
+		color: #3A9031;
+		font-family: 'Economica', sans-serif;
+	}
+	
+	h3{
+		background-color: #3A9031;
+		font-family: 'Economica', sans-serif;
+	}
+	
+	#intro{
+		height: 10em;
+	}
+	#intro>h1{
+		position: relative;
+			top: -2.5em;
+			
+		font-size: 3em;
+		text-align: center;
+	}
+	#intro>figure{
+		height: 100%;
+		overflow: hidden;
+	}
+	#intro>figure>img{
+		width: 100%;
+	}
+	
+	#leftpic{
+		position: absolute;
+			left: 5%;
+			
+		width: 6%;
+		overflow: hidden;
+	}
+	#leftpic>figure>img{
+		width: 100%;
+	}
+	
+	#more1{
+		width: 50%;
+	}
+	#more1>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more1>figure{
+		width: 35%;
+	}
+	#more1>figure>img{
+		width: 100%;
+	}
+	
+	#more2{
+		width: 50%;
+	}
+	#more2>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more2>figure{
+		width: 35%;
+	}
+	#more2>figure>img{
+		width: 100%;
+	}
+	
+	#more3{
+		width: 50%;
+	}
+	#more3>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more3>figure{
+		width: 35%;
+	}
+	#more3>figure>img{
+		width: 100%;
+	}
+	
+	#more4{
+		width: 50%;
+	}
+	#more4>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more4>figure{
+		width: 35%;
+	}
+	#more4>figure>img{
+		width: 100%;
+	}
+	
+	nav{
+		text-align: center;
+		padding: 1%;
+		
+		background-color: #B0723C;
+	}
+	nav>ul>li{
+		display: inline;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	nav>ul>li>a:link{
+		color: #914300;
+	}
+	
+	p{
+		font-family: 'Gudea', sans-serif;
+	}
+	
+	#page{
+		background-color: #4F4F4F;
+	}
+	
+	#rightpic{
+		position: absolute;
+			left: 85%;
+			
+		width: 5%;
+		overflow: hidden;
+	}
+	#rightpic>figure>img{
+		width: 100%;
+	}
+	
+	small{
+		font-family: 'Gudea', sans-serif;
+	}
+	
+	#title{
+		overflow: hidden;
+	}
+	#title>h1{
+		padding: 2%;
+		text-align: center;
+	}
+	
+	/* MEDIA QUERIES */
+	@media screen and (min-width: 1200px)
+	{
+		/*  SELF-CLEARING FLOATS  */
+		#useful:after,
+		#ads:after{
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+	
+		#ads{
+			padding-left: 2%;
+			position: relative;
+				top: 0;
+			width: 18%;
+			visibility: visible;
+			float: left;
+			
+			background-color: #4F4F4F;
+		}
+		#ads>figure{
+			width: 85%;
+			padding-top: 18%;
+			padding-bottom: 18.55%;
+		}
+		#ads>figure>img{
+			max-width: 100%;
+		}
+		#ads>figure>figcaption{
+			font-size: 1em;
+		}
+		
+		#useful{
+			width: 80%;
+			float: left;
+			
+			background-color: #4F4F4F;
+		}
+	}
+	
+	@media screen and (max-width: 900px)
+	{
+		#content{
+			width: 75%;
+		}
+		#content>article>figure>img{
+			position: relative;
+			left: 0;
+			
+			margin: 2%;
+			
+			width: 100%;
+		}
+		#content>h2{
+			position: relative;
+				left: -8%;
+		}
+		#content>h3{
+			position: relative;
+				left: -8%;
+		}
+		
+		#leftpic{
+			width: 8%;
+		}
+		
+		#rightpic{
+			width: 8%;
+		}
+	}
+	
+	@media screen and (max-width: 500px)
+	{
+		#content{
+			width: 75%;
+		}
+		#content>article>figure>img{
+			position: relative;
+			left: 0;
+			
+			margin: 2%;
+			
+			width: 100%;
+		}
+		#content>h2{
+			position: relative;
+				left: 0%;
+
+			width: 100%;
+		}
+		#content>h3{
+			position: relative;
+				left: 0;
+
+			width: 100%;
+		}
+	
+		#featuredR{
+			margin-top: 5%;
+		}
+		#featuredL
+		{
+			margin-top: 5%;
+		}
+		
+		#leftpic{
+			width: 10%;
+		}
+		
+		p{
+			font-size: .9em;
+		}
+		
+		#rightpic{
+			width: 10%;
+		}
+	}
+	
+</style>
+
+<body>
+<div id=page>
+	<div id=title>
+		<div id=leftpic>
+			<figure>
+				<img src="titleclip2.png" />
+			</figure>
+		</div><!-- leftpic close -->
+		<div id=rightpic>
+			<figure>
+				<img src="titleclip1.png" />
+			</figure>
+		</div><!-- rightpic close -->
+		
+		<h1> Website Title </h1>
+	</div><!-- title close -->
+	
+	<div id=navbar>
+		<nav>
+			<ul>
+				<li> <a href="Home.html" style="text-decoration:none;">HOME</a>
+				<li> <a href="####" style="text-decoration:none;">REVIEWS</a>
+				<li> <a href="####" style="text-decoration:none;">SEARCH</a>
+			</ul>
+		</nav>
+	</div><!-- navbar close -->
+	
+	<div id=intro>
+		<figure>
+			<img src="CoD_thumb.png" />
+		</figure>
+		<h1>Call of Duty: Advanced Warefare</h1>
+	</div><!-- intro close -->
+	
+<div id=useful>
+	<div id=content>
+		<h2> Miguel Concepcion</h2>
+		<h3> 4 of 5</h3>
+		
+		<article>
+			<p> &emsp; By the time I finished Call of Duty: Advanced Warfare's single-player mode, I wanted to return to Seoul, South Korea, the setting of the game's first chapter. This mid-21st-century metropolis is awash in ultra modernity, to a degree I haven’t seen since visiting the economically prosperous version of Tokyo in the 1980s. It's the perfect futuristic backdrop to introduce Advance Warfare's new movement abilities, which are granted by the soldier-enhancing exosuit introduced in the campaign. And when you first bear witness to a flying giant snake made up purely of small drones roaming the streets of Seoul, you know this is new science-fictional territory for Call of Duty.</p>
+			<p> &emsp; Sledgehammer Games crafted an opening that does everything a great first chapter is meant to do: it welcomes you with big-budget bravado, offers control tips without excessive hand-holding, and establishes the tone of the campaign. “Welcome back to Call of Duty,” the first chapter seems to say. “Let's show the other games how to make a proper entrance. And while we're at it, let's test your subwoofer with the bass of an explosion and the vibrations of slow-motion melodrama.” This is an introduction that kicks off the wartime journey of protagonist Jack Mitchell, played by Troy Baker. He begins as a U.S. Marine, but after a catastrophic event during his first mission, he joins Atlas, a private military corporation run by the generically named Jonathan Irons, who is played by a realistically-rendered Kevin Spacey.</p>
+			<p> &emsp; It's never been easier for a Call of Duty campaign to justify the series' traditional chapter-by-chapter globetrotting. When the services of the Atlas Corporation are sold to the highest bidder, every country is fair game. That said, Mitchell's story isn't as clear-cut as it seems; he isn’t simply a Marine-turned-mercenary who travels where Irons tells him to. His tours offer a smattering of memorable missions, including a fast-paced intra-city manhunt through Santorini and several pulse-quickening escape sequences. Even Kevin Spacey’s boastful tour of an Atlas facility is a pleasurable golf-cart ride on rails that wouldn’t feel out of place as an EPCOT Center attraction, albeit one with a lot of killing machines in the background.</p>
+			<p> &emsp; Call of Duty games typically provide the chance to snuff out enemies from afar in their campaigns, but surprisingly, there is only one such sequence in Advanced Warfare. To be fair, though, enemy weapon drops are plentiful in scoped firearms, often with the same see-through-walls technology as one of the tech grenades. Sledgehammer’s future vision of weapon tech is positively practical with heads-up displays that are as clean as they are informative. The game varies the action in other ways, such as with a riveting sequence involving a jet ski with diving capabilities. (The campaign's other brief vehicular sections are unremarkable.) Certainly, I would have preferred more of these breaks from standard combat over the arduous occasions when you're asked to push objects. It is hardly a pleasure to shove an overturned van while having to endure the intentionally abrasive metal-on-pavement noise that accompanies it.</p>
+			<p> &emsp; Whether intentional or not, the campaign is a narrative of echoes. If you've played your share of shooters from the last decade, you've seen these settings before. The passages of a naval ship echo the then-stupendous opening of Call of Duty 4, as does having a hardened British field mentor at your side for many of the chapters. Even if an obligatory bridge chapter reinforces the campaign's shortage of originality, at least these instances do not take away from the consistent entertainment of the overall playthrough. It follows the typical rhythm of a Call of Duty campaign, in which consecutive ground combat sections are broken up with a chase, a cutscene, or a quick time event.</p>
+			<figure>
+				<img src="CoD_play.jpg" />
+			</figure>
+			<p> &emsp; The majority of Advance Warfare's campaign gameplay adheres to Call of Duty's linear first-person shooter level progression, where combat boils down to suppression of the enemy near and far. There are also a handful of looser missions that hint at what a Call of Duty game might be if it aspired to the wide-linear designs of the two latest Crysis games. Those games excel by minimizing the frustration of death, where getting killed gives you the opportunity to try a new path or strategy with each respawn. Many of Advanced Warfare’s sections are spacious enough to experiment with new routes, and provide optional opportunities to use the exosuit. Yet therein lies one of the campaign's shortcomings: a lack of incentives to frequently use the exosuit. In the campaign, using these movement abilities is seldom mandatory, but always optional, and many environments allow plenty of room in which to play around. Nevertheless, the plethora of cover points will easily keep you alive, so why take a chance of being exposed, considering enemies aren’t especially aggressive? The boost dashes and double jumps are immensely useful to evade enemies; not so much if you want to take the fight to them. The ability to hover in single player is only useful for the few times you need to stick a landing from a multistory drop.</p>
+			<p> &emsp; The maps aren’t quite like the Call of Duty maps you’ve played before: the upward mobility provided by the exosuit calls for more vertical structures. Advance Warfare does a fine job in addressing issues with first-person platforming, letting you catch the edges of rooftops if your double jump wasn’t as long as you expected. That’s not to say that the maps completely cater to every new ability. As fun as it is to evade a hunter by sliding under a pickup truck, these multiplayer maps aren’t packed with such escape points. This kind of scarcity only makes wise use of the slide move all the more meaningful. Map memorization is thus all the more crucial, especially given how the maps in Advanced Warfare are understandably larger than typical Call of Duty maps.</p>
+			<p> &emsp; Progressing and obtaining rewards in Advanced Warfare's multiplayer is a layered experience, and Sledgehammer has erred on the side of excess. Beyond the straightforward rewards of actively participating in matches, the studio also recognizes the appeal of the blind box though its Supply Drop system. Considering that it would take tens upon tens of hours to unlock every possible Supply Drop item, it's a relief there's no risk of unlocking duplicate items. The one exception is if you convert an unwanted Supply Drop reward into experience, which is a practical option for some, but it opens up the possibility of unlocking that item again.</p>
+			<p> &emsp; The last time Call of Duty had “Warfare” in its subtitle, it led to a well-received trilogy that deftly transitioned the series away from a well-trodden global conflict to modern-day combat. If the settings of today have run their course just as World War II did years ago, Advanced Warfare makes for a convincing foundation of futuristic yet relatable combat that is worth exploring and expanding further. The huge change in player mobility is less of a paradigm shift and more of an overdue retooling for an 11-year-old FPS franchise, especially in a year of mobility-focused shooters. Yet for all its predictability, Advanced Warfare is a deluge of action-film bravado, and it's difficult to not be carried away by its tidal forces.</p>
+			</article>
+	</div><!-- content close -->
+
+	<div id=featured>
+		<h2> Featured Reviews:	</h2>
+		
+		<div id=featuredL>
+			<div id=more1>
+				<figure>
+					<img src="DS3_thumb.jpg" />
+				</figure>
+				<p><a href="DS3page.html" style="text-decoration:none;"><strong>Dark Souls 3</strong></a></p>
+				<p>4/5	Mike Mahardy</p>
+			</div><!-- more1 close -->
+		
+			<div id=more2>
+				<figure>
+					<img src="W3_thumb.jpg" />
+				</figure>
+				<p><a href="W3page.html" style="text-decoration:none;"><strong>The Witcher 3</strong></a></p>
+				<p>5/5	Kevin VanOrd</p>
+			</div><!-- more2 close -->
+		</div><!-- featuredL close -->
+		
+		<div id=featuredR>
+			<div id=more3>
+				<figure>
+					<img src="SV_thumb.jpg" />
+				</figure>
+				<p><a href="SVpage.html" style="text-decoration:none;"><strong>Stardew Valley</strong></a></p>
+				<p>4/5	Kallie Plagge</p>
+			</div><!-- more3 close -->
+		
+			<div id=more4>
+				<figure>
+					<img src="CoD_thumb.png" />
+				</figure>
+				<p><a href="CoDpage.html" style="text-decoration:none;"><strong>CoD: Advanced Warfare</strong></a></p>
+				<p>4/5	Miguel Concepcion</p>
+			</div><!-- more4 close -->
+		</div><!-- featuredR close -->
+		
+	</div><!-- featured close -->
+</div><!-- useful close -->
+
+<div id=ads>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+		<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+</div><!-- ads close -->
+
+<div id=footer>
+	<footer>
+		<small>&copy;2016 WEBSITE TITLE & CO.</small>
+		<small><br>Review stolen from www.gamespot.com</small>
+		<small><br>Need Something? <a href="####">Contact Us!</a></small>
+	</footer>
+</div><!-- footer close -->
+</div><!-- page close -->
+</body>
+</html>

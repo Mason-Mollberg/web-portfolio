@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+	<meta charset=uft-8>
+	<title>Mason Mollberg, W3 Review</title>
+	<link href='https://fonts.googleapis.com/css?family=Gudea:400,400italic|Economica:700' rel='stylesheet' type='text/css'>
+	<script src="imgSizer.js"></script>
+</head>
+
+<style type="text/css">	
+
+	*{margin:0; padding:0;}
+
+	/*  SELF-CLEARING FLOATS  */
+	#title:after,
+	#featured:after{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	
+	#ads{
+		position: absolute;
+			top: -20em;
+		width: .1%;
+		visibility: hidden;
+		overflow: hidden;
+	}
+	#ads>figure{
+		width: 1%;
+	}
+	#ads>figure>img{
+		max-width: 100%;
+	}
+	#ads>figure>figcaption{
+		font-size: .01%;
+	}
+	
+	#content{
+		width: 40%;
+		margin: 2%;
+		margin-top: 0%;
+		padding: 1%;
+		padding-top: 0%;
+		padding-left: 3%;
+		
+		text-align: left;
+	
+	}
+	#content>article>p{
+		margin-top: 2%;
+		padding: 2%;
+		
+		color: #D1D1D1;
+	}
+	#content>h2{
+		position: relative;
+			left: -12.5%;
+	
+		padding-top: .5%;
+		padding-bottom: 6%;
+		padding-left: 3%;
+		width: 50%;
+		
+		color: BLACK;
+		background-color: #3A9031;
+	}
+	#content>h3{
+		position: relative;
+			left: -12.5%;
+			
+		padding-left: 3%;
+		width: 25%;
+	}
+	#content>article>figure>img{
+		position: relative;
+			left: 25%;
+			
+		margin: 1%;
+			
+		width: 125%;
+	}
+	
+	#featured{
+		background: #065589 url("main_bg.png") repeat-y 53.333333333333333333333333333333% 0;	<!-- 2400px/4500px -->
+	}
+	#featured>h2{
+		padding-left: 5%;
+		padding-right: 1%;
+		padding-top: .5%;
+		padding-bottom: .5%;
+	}
+	#featuredR
+	{
+		width: 35%;
+		padding: 5%;
+		padding-bottom: 1%;
+		
+		margin-left: 10%;
+		
+		float: left;
+	}
+	#featuredL
+	{
+		width: 35%;
+		padding: 5%;
+		padding-bottom: 1%;
+		
+		float: left;
+	}
+	
+	#footer{
+		background-color: #B0723C;
+	}
+	
+	footer{
+		padding: 1%;
+	}
+	
+	h1{
+		color: #3A9031;
+		font-family: 'Economica', sans-serif;
+	}
+	
+	h2{
+		font-size: 1.5em;
+		color: #3A9031;
+		font-family: 'Economica', sans-serif;
+	}
+	
+	h3{
+		background-color: #3A9031;
+		font-family: 'Economica', sans-serif;
+	}
+	
+	#intro{
+		height: 10em;
+	}
+	#intro>h1{
+		position: relative;
+			top: -2.5em;
+			
+		font-size: 3em;
+		text-align: center;
+	}
+	#intro>figure{
+		height: 100%;
+		overflow: hidden;
+	}
+	#intro>figure>img{
+		width: 100%;
+	}
+	
+	#leftpic{
+		position: absolute;
+			left: 5%;
+			
+		width: 6%;
+		overflow: hidden;
+	}
+	#leftpic>figure>img{
+		width: 100%;
+	}
+	
+	#more1{
+		width: 50%;
+	}
+	#more1>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more1>figure{
+		width: 35%;
+	}
+	#more1>figure>img{
+		width: 100%;
+	}
+	
+	#more2{
+		width: 50%;
+	}
+	#more2>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more2>figure{
+		width: 35%;
+	}
+	#more2>figure>img{
+		width: 100%;
+	}
+	
+	#more3{
+		width: 50%;
+	}
+	#more3>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more3>figure{
+		width: 35%;
+	}
+	#more3>figure>img{
+		width: 100%;
+	}
+	
+	#more4{
+		width: 50%;
+	}
+	#more4>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more4>figure{
+		width: 35%;
+	}
+	#more4>figure>img{
+		width: 100%;
+	}
+	
+	nav{
+		text-align: center;
+		padding: 1%;
+		
+		background-color: #B0723C;
+	}
+	nav>ul>li{
+		display: inline;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	nav>ul>li>a:link{
+		color: #914300;
+	}
+	
+	p{
+		font-family: 'Gudea', sans-serif;
+	}
+	
+	#page{
+		background-color: #4F4F4F;
+	}
+	
+	#rightpic{
+		position: absolute;
+			left: 85%;
+			
+		width: 5%;
+		overflow: hidden;
+	}
+	#rightpic>figure>img{
+		width: 100%;
+	}
+	
+	small{
+		font-family: 'Gudea', sans-serif;
+	}
+	
+	#title{
+		overflow: hidden;
+	}
+	#title>h1{
+		padding: 2%;
+		text-align: center;
+	}
+	
+	/* MEDIA QUERIES */
+	@media screen and (min-width: 1200px)
+	{
+		/*  SELF-CLEARING FLOATS  */
+		#useful:after,
+		#ads:after{
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+	
+		#ads{
+			padding-left: 2%;
+			position: relative;
+				top: 0;
+			width: 18%;
+			visibility: visible;
+			float: left;
+			
+			background-color: #4F4F4F;
+		}
+		#ads>figure{
+			width: 85%;
+			padding-top: 20%;
+			padding-bottom: 21%;
+		}
+		#ads>figure>img{
+			max-width: 100%;
+		}
+		#ads>figure>figcaption{
+			font-size: 1em;
+		}
+		
+		#useful{
+			width: 80%;
+			float: left;
+			
+			background-color: #4F4F4F;
+		}
+	}
+	
+	@media screen and (max-width: 900px)
+	{
+		#content{
+			width: 75%;
+		}
+		#content>article>figure>img{
+			position: relative;
+			left: 0;
+			
+			margin: 2%;
+			
+			width: 100%;
+		}
+		#content>h2{
+			position: relative;
+				left: -8%;
+		}
+		#content>h3{
+			position: relative;
+				left: -8%;
+		}
+		
+		#leftpic{
+			width: 8%;
+		}
+		
+		#rightpic{
+			width: 8%;
+		}
+	}
+	
+	@media screen and (max-width: 500px)
+	{
+		#content{
+			width: 75%;
+		}
+		#content>article>figure>img{
+			position: relative;
+			left: 0;
+			
+			margin: 2%;
+			
+			width: 100%;
+		}
+		#content>h2{
+			position: relative;
+				left: 0%;
+
+			width: 100%;
+		}
+		#content>h3{
+			position: relative;
+				left: 0;
+
+			width: 100%;
+		}
+	
+		#featuredR{
+			margin-top: 5%;
+		}
+		#featuredL
+		{
+			margin-top: 5%;
+		}
+		
+		#leftpic{
+			width: 10%;
+		}
+		
+		p{
+			font-size: .9em;
+		}
+		
+		#rightpic{
+			width: 10%;
+		}
+	}
+	
+</style>
+
+<body>
+<div id=page>
+	<div id=title>
+		<div id=leftpic>
+			<figure>
+				<img src="titleclip2.png" />
+			</figure>
+		</div><!-- leftpic close -->
+		<div id=rightpic>
+			<figure>
+				<img src="titleclip1.png" />
+			</figure>
+		</div><!-- rightpic close -->
+		
+		<h1> Website Title </h1>
+	</div><!-- title close -->
+	
+	<div id=navbar>
+		<nav>
+			<ul>
+				<li> <a href="Home.html" style="text-decoration:none;">HOME</a>
+				<li> <a href="####" style="text-decoration:none;">REVIEWS</a>
+				<li> <a href="####" style="text-decoration:none;">SEARCH</a>
+			</ul>
+		</nav>
+	</div><!-- navbar close -->
+	
+	<div id=intro>
+		<figure>
+			<img src="W3_thumb.jpg" />
+		</figure>
+		<h1>The Witcher 3</h1>
+	</div><!-- intro close -->
+	
+<div id=useful>
+	<div id=content>
+		<h2> Kevin VanOrd</h2>
+		<h3> 5 of 5</h3>
+		
+		<article>
+			<p> &emsp; In The Witcher 3: Wild Hunt, the sacred is always at war with the profane, and beauty is always at war with blood. The series has always contrasted its world's physical glamor with its intrinsic violence, but never has that contrast been this uneasy, this convulsive. That The Witcher 3 depicts the immediate brutality of battle in great detail is not a surprise; many games fill the screen with decapitated heads and gory entrails. It's the way this incredible adventure portrays the personal tragedies and underhanded opportunities that such battles provide that makes it so extraordinary.</p>
+			<p> &emsp; It is more than its thematic turbulence that makes The Witcher 3 extraordinary, actually. Excellence abounds at every turn in this open-world role-playing game: excellent exploration, excellent creature design, excellent combat mechanics, excellent character progression. But the moments that linger are those that reveal the deep ache in the world's inhabitants. In one quest, you reunite two lovers, one of which is now a rotting hag, its tongue lasciviously lolling from its mouth. In another, a corpulent spouse-abuser must find a way to love two different lost souls, each of which test the limits of his affection. Don't worry that these vague descriptions spoil important events: they are simple examples of the obstacles every resident faces. On the isles of Skellige and in the city of Novigrad, there is no joy without parallel sorrow. Every triumph demands a sacrifice.</p>
+			<p> &emsp; As returning protagonist Geralt of Rivia, you, too, face the anguish of mere existence, sometimes in unexpected, unscripted ways. The central story, which sees you seeking your ward and daughter figure Ciri, as well as contending with the otherworldly force known as the wild hunt, often forces this anguish upon you. But it was my natural exploration of the game's vast expanses that proved most affecting. At one point, I witnessed a woman sentenced to death, doomed to starve after being chained to a rock. It's a chilling sentence, of course, but it was only later, when I accidentally sailed past the tiny island where her corpse still rested, that the horror of her punishment sunk into my heart. The Witcher 3's story did not script this moment; it was merely a passing detail that might have been lost in the waves or overlooked in favor of the harpies circling overhead. Yet there she was, a reminder that my actions--actions that felt righteous and reasonable as I made them--allowed this woman to rot in this far way place.</p>
+			<p> &emsp; The Witcher 2: Assassins of Kings touched on similar repercussions, but The Witcher 3 makes them personal. Political tensions run as hot as they always have in this series, and your decisions still divert the paths of barons and kings in intriguing ways. But where The Witcher 2's focus on plot came at the expense of characterization, the sequel gives the wartime struggle great heft by giving Geralt intimate connections to every major player. The connection between Ciri and Geralt proves to be the story's strongest driving force, but Ciri is not a damsel to be rescued, though it may seem so at first, especially in this particular world. This is a place where women struggle to find respect as political candidates, as armorsmithing masters, and even as proper members of a functioning culture.</p>
+			<p> &emsp; The Witcher 3 is enormous in scope, though "big" is just a descriptor, a statement of neither good nor bad. It is fortunate, then, that The Witcher 3 does not subscribe to the "make a big world and fill it with copy-paste content" design philosophy. Instead, it finds a nigh-perfect sense of balance between giving you things to do and allowing its spaces to breathe. You follow a path not just because there's a question mark on your map, but also because it must lead somewhere new and interesting. The intrigue builds naturally: Every quest is a story of sadness or triumph waiting to absorb you, asking you to make decisions that change the landscape in various ways. You won't always know what the consequences are; some decisions have noticeable, game-altering repercussions, while others barely draw your gaze. But the consequences are there, and you often notice them, even though the game doesn't go out of its way to call attention to them.</p>
+			<p> &emsp; The writing can be best described as "lusty." Many of the land's inhabitants serve a god, but their gods have no apparent problem with them making murderous accusations and shouting obscenities. It's fitting that these people would turn to the gods yet curse them in turn, given fields ravaged by battle and littered with bloated corpses. There are a few moments that reveal the screenplay's seams: some of Geralt's lines may not make sense if you choose them in a particular order, for instance, and Geralt is concerned only with money and prefers to stay out of politics, except for when he's not like that at all, because the plot demands as much. But at least the witcher's signature dry growl remains intact, and the rambunctious Irish and Scottish accents that pervade particular regions may inspire you to head to the pub and grab a pint.</p>
+			<figure>
+				<img src="W3_play.jpg" />
+			</figure>
+			<p> &emsp; As cutting as some characters' wit may be (Sigismund Dijkstra's sarcastic barbs make him one of the game's foul-mouthed delights), you do most of your cutting with the blades sheathed on your back. The Witcher 2's combat was overly demanding at the outset, but The Witcher 3 is substantially easier; I recommend, in fact, that you choose a difficulty level one notch higher than the one you would typically choose, presuming you don't default to the most stringent one straight away. Even when things get easy, however, the combat is always satisfying, due to the crunchiness of landing blows, the howls of human foes scorched by your Igni sign, and the fearsome behavior of necrophages, wandering ghosts, and beasts of the indescribable sort. It's easy to get sidetracked and outlevel story quests, but even lesser beasts require a bit of finesse; drowners attack in numbers, for instance, knocking you about and making it difficult to swing, while winged beasts swoop in for a smackdown and require you to blast them down with a flash of fire, a shockwave, or a crossbow bolt.</p>
+			<p> &emsp; The Witcher 3: Wild Hunt is undoubtedly beautiful regardless of platform, though prone to occasional bugs and visual glitches. Solving a quest's subtasks in a particular order caused the game to stick at a perpetual loading screen. Roach decided to stop galloping and lurch ahead in a weird way for minutes on end until I quick-traveled away and returned. Geralt's hair blew in the wind, even when he was indoors. It's jarring should you enter an area after quick-traveling and the citizens have yet to pop in, including quest-givers. Along with occasional console frame rate jitters, these elements may prove distracting to you should they arise, depending on your level of tolerance; even so, Geralt's newest adventure is such an achievement that I was rarely disturbed by the glitches I encountered.</p>
+			<p> &emsp; These distractions stand out in part because The Witcher 3: Wild Hunt is otherwise incredible and sumptuous; the little quirks are pronounced when they are surrounded by stellar details. And make no mistake: this is one of the best role-playing games ever crafted, a titan among giants and the standard-setter for all such games going forward. Where the Witcher 2 sputtered to a halt, The Witcher 3 is always in a crescendo, crafting battle scenarios that constantly one-up the last, until you reach the explosive finale and recover in the glow of the game's quiet denouement. But while the grand clashes are captivating, it is the moments between conflicts, when you drink with the local clans and bask in a trobairitz's song, that are truly inspiring.</p>
+		</article>
+	</div><!-- content close -->
+
+	<div id=featured>
+		<h2> Featured Reviews:	</h2>
+		
+		<div id=featuredL>
+			<div id=more1>
+				<figure>
+					<img src="DS3_thumb.jpg" />
+				</figure>
+				<p><a href="DS3page.html" style="text-decoration:none;"><strong>Dark Souls 3</strong></a></p>
+				<p>4/5	Mike Mahardy</p>
+			</div><!-- more1 close -->
+		
+			<div id=more2>
+				<figure>
+					<img src="W3_thumb.jpg" />
+				</figure>
+				<p><a href="W3page.html" style="text-decoration:none;"><strong>The Witcher 3</strong></a></p>
+				<p>5/5	Kevin VanOrd</p>
+			</div><!-- more2 close -->
+		</div><!-- featuredL close -->
+		
+		<div id=featuredR>
+			<div id=more3>
+				<figure>
+					<img src="SV_thumb.jpg" />
+				</figure>
+				<p><a href="SVpage.html" style="text-decoration:none;"><strong>Stardew Valley</strong></a></p>
+				<p>4/5	Kallie Plagge</p>
+			</div><!-- more3 close -->
+		
+			<div id=more4>
+				<figure>
+					<img src="CoD_thumb.png" />
+				</figure>
+				<p><a href="CoDpage.html" style="text-decoration:none;"><strong>CoD: Advanced Warfare</strong></a></p>
+				<p>4/5	Miguel Concepcion</p>
+			</div><!-- more4 close -->
+		</div><!-- featuredR close -->
+		
+	</div><!-- featured close -->
+</div><!-- useful close -->
+
+<div id=ads>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+</div><!-- ads close -->
+
+<div id=footer>
+	<footer>
+		<small>&copy;2016 WEBSITE TITLE & CO.</small>
+		<small><br>Review stolen from www.gamespot.com</small>
+		<small><br>Need Something? <a href="####">Contact Us!</a></small>
+	</footer>
+</div><!-- footer close -->
+</div><!-- page close -->
+</body>
+</html>

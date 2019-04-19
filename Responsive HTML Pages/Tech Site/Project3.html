@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+	<meta charset=uft-8>
+	
+	<title>Mason Mollberg, Project 3</title>
+	
+	<link href='https://fonts.googleapis.com/css?family=Timmana|Rambla' rel='stylesheet' type='text/css'>
+
+	<script src="imgSizer.js"></script>
+</head>
+
+<style type="text/css">	
+
+	*{margin:0; padding:0;}
+
+	/*-  SELF-CLEARING FLOATS  -*/
+	#gallery:after,
+	#blog:after{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	
+	#blog{
+		background: #065589 url("main_bg.png") repeat-y 53.333333333333333333333333333333% 0;	<!-- 2400px/4500px -->
+	}
+
+	body{
+		background-color: #27485d;
+	}
+
+	footer{
+		padding-left: 2.5%;
+		padding: 1%;
+	
+		background-color: #2b2f32;
+	}
+	
+	#gallery{
+		margin: 2.5%;
+		width: 80%;
+		
+		background-color: #6c7177;
+	}
+	#gallery>figure>img{
+		max-width: 70%;
+		
+		float: left;
+	}
+	
+	h1{
+		margin-left: 10%;
+	
+		1.75em;
+		
+		font-family: 'Timmana', sans-serif;
+	}
+	h2{
+		padding: 1%;
+	
+		background-color: #2b2f32;
+	
+		font-family: 'Timmana', sans-serif;
+	}
+	h3{
+		padding: 1%;
+	
+		background-color: #2b2f32;
+	
+		font-family: 'Timmana', sans-serif;
+	}
+	h4{
+		font-family: 'Timmana', sans-serif;
+	}
+
+	#intro{
+		padding-top: 1.5%;
+	
+		background-color: 4e5d73;
+	}
+	
+	#leftbar{
+		width:45%;
+		padding-left: 2%;
+		padding-bottom: 2%;
+		
+		float: left;
+	}
+	
+	#logo{
+		position: relative;
+	
+		width: 7%;
+		
+		float: left;
+		background:none;
+		z-index: 5;
+	}
+	#logo>figure>img{
+		padding: 2.5%;
+		max-width: 100%;
+	}
+	
+	nav{
+		background-color: #2b2f32;
+		
+		font-size: 1.25em;
+	}
+	nav>ul>li{
+		margin: 5%;
+		display: inline;
+		
+		font-family: 'Timmana', sans-serif;
+	}
+	nav>ul>li>a:link{
+		color: #065589;
+	}
+	nav>ul>li>a:visited{
+		color: #065589;
+	}
+	nav>ul>li>a:hover{
+		color: #6c7177;
+	}
+	
+	p{
+		padding: 1%;
+		
+		font-family: 'Rambla', sans-serif;
+	}
+	
+	#page{
+		margin:36px auto;
+		width: 900px;
+	
+		background-color: #2d3a43;
+	}
+	
+	#rightbar{
+		width: 46.25%;
+		margin-left: 6.75%;
+		
+		float: left;
+	}
+	#rightbar>ul{
+		padding: 1.5%;
+		list-style-type: none;
+	}
+	#rightbar>h3{
+		padding-left: 1.5%;
+	}
+	#rightbar>figure{
+		margin-top: 15%;
+		margin-left: 20%;
+	}
+	#rightbar>figure>img{
+		max-width: 100%
+	}
+	
+	small{
+		font-family: 'Rambla', sans-serif;
+	}
+	
+	#words{
+		width: 30%;
+	
+		float: left;
+	}
+	#words>h2{
+		padding: 2%;
+	}
+	#words>p{
+		margin-top: 2%;
+		padding: 3%;
+	}
+	
+	<!-- 768px style -->
+	@media screen and (max-width: 786px){
+	
+		nav>ul>li{
+			text-align: center;
+		}	
+	
+		#page{
+			width: 768px;
+		}
+	
+	}
+	<!-- 768px end -->
+	
+	<!-- 520px style -->
+	@media screen and (max-width: 520px){
+		
+	
+		#gallery>figure>img{
+			width: 100%;
+			float: none;
+		}
+		
+		#leftbar{
+			width: 100%;
+			float: none;
+		}
+		
+		#logo{
+			margin: 0 auto 20px;
+			position: relative;
+		}
+		
+		#page{
+			width: 520px;
+		}
+		
+		#rightbar{
+			width: 100%;
+			float: none;
+		}
+		
+		#words{
+			width: 100%;
+			float: none;
+		}
+		
+	}
+	<!-- 520px end -->
+</style>
+
+<body>
+<div id=page>
+
+	<div id=logo>
+		<figure>
+			<img src="LogoPic.png" />
+		</figure>
+	</div><!-- logo close -->
+	
+	<div id=intro>
+		<h1>TechSite.tech</h1>
+		
+		<nav>
+			<ul>
+				<li> <a href="####" style="text-decoration:none;">HOME</a>
+				<li> <a href="####" style="text-decoration:none;">REVIEWS</a>
+				<li> <a href="####" style="text-decoration:none;">FORUMS</a>
+			</ul>
+		</nav>
+	</div><!-- intro close -->
+	
+	<div id=gallery>
+	
+		<div id=words>
+			<h2>Building a Computer?</h2>
+		
+			<p>&emsp; Here at TechSite.tech, we've go all of the tips, tricks, and recommendations that you need to make a powerful and inexpensive PC!</p>
+		</div>
+		
+		<figure>
+			<img src="GalleryPic.jpg" />
+		</figure>
+	</div><!-- gallery close -->
+	
+	<div id=blog>
+	
+	<h2> Review: Asus GeForce GTX 980Ti Strix </h2>
+	
+		<div id=leftbar>
+		
+			<article>
+				<p> &emsp; By taking the Titan X Maxwell G200 architecture, trimming down the number of cores by a little less than ten per cent, and then halving the amount of available memory to a still-spacious 6GB, Nvidia has managed to produce a graphics card close in performance to the Titan X, yet with a price point nearer to the standard GTX 980. The 980Ti also retains the same memory and core clock speeds as the Titan X. However, this level of performance is just a starting point for the Asus GTX 980Ti Strix OC, which makes many significant improvements over Nvidia's reference design.</p>
+				<p> &emsp; Performance Wise, the Strix GTX 980Ti doesn't disappoint. Flip the Asus card into its high-performance OC mode and it increases base and boost clocks from 1000MHz and 1075MHz, to 1,216MHz and 1,317MHz respectively. That's a performance boost of around 22 percent. Even in its default 'Gaming' mode it runs around 20 percent faster than the reference design. It's 7,200MHz memory clock also outruns the competition, albeit by a lesser percentage. As you might expect, this level of performance results in some very impressive frame rates. Gaming at 4K resolution is a tall order for most single-card setups, but the Asus Strix GTX 980 Ti has a jolly good stab at it. Alien Isolation, for example, runs with a convincing average frame rate of 71fps with ultra quality settings on our test rig. Zotac's GeForce GTX 980 Ti Amp! Edition also turned in an average frame rate above 60fps, but the extra headroom afforded by the Asus card gives you more flexibility with quality settings and fewer frames below that threshold speed.</p>
+				<p> &emsp; Despite the high price, the GTX 980Ti Strix Gaming offers considerable value for money to those who can afford it. It may costs over $100 more than many other cards based on the same GPU, but its tangible performance benefits and superb build quality make it quite obvious where that extra money is going.</p>
+			</article>
+		</div><!-- leftbar close -->
+		<div id=rightbar>
+			<h3>You May Also Like:</h3>
+			
+			<ul>
+				<li><h4>Zotac GeForce GTX 980 Ti Amp! Edition</h4>
+					<p>Review: 4.5/5</p>
+					<hr />
+				<li><h4>MSI GTX 980 Gaming 4G</h4>
+					<p>Review: 4.5/5</p>
+					<hr />
+				<li><h4>Club3D Radeon R9 390 royalQueen</h4>
+					<p>Review: 4/5</p>
+					<hr />
+				<li><h4>XFX Radeon R9 390X Double Dissipation Core Edition</h4>
+					<p>Review: 3.5/5</p>
+					<hr />
+				<li><h4>Zotac GeForce GTX 960 Amp! Edition</h4>
+					<p>Review: 4/5</p>
+					<hr />
+			</ul>
+			
+			<figure>
+				<img src="AdSpace.png" />
+			</figure>
+		</div><!-- rightbar close -->
+	</div><!-- blog close -->
+	
+	<footer>
+		<small> &copy2016 TechSite Inc. & Co.</small>
+		<small> Review stolen from pcadvisor.co.uk.</small>
+		<p> Having Issues? <a href="####" style="text-decoration:none;">Contact Us!</a>
+	</footer>
+</div><!-- page close -->
+</body>
+
+</html>

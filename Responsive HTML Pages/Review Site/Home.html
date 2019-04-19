@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+	<meta charset=uft-8>
+	<title>Mason Mollberg, Final</title>
+	<link href='https://fonts.googleapis.com/css?family=Gudea:400,400italic|Economica:700' rel='stylesheet' type='text/css'>
+	<script src="imgSizer.js"></script>
+</head>
+
+<style type="text/css">	
+
+	*{margin:0; padding:0;}
+
+	/*  SELF-CLEARING FLOATS  */
+	#title:after,
+	#featured:after{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	
+	#ads{
+		position: absolute;
+			top: -20em;
+		width: .1%;
+		visibility: hidden;
+		overflow: hidden;
+	}
+	#ads>figure{
+		width: 1%;
+	}
+	#ads>figure>img{
+		max-width: 100%;
+	}
+	#ads>figure>figcaption{
+		font-size: .01%;
+	}
+	
+	#content{
+		width: 40%;
+		margin: 2%;
+		margin-top: 0%;
+		padding: 1%;
+		padding-left: 3%;
+		
+		text-align: left;
+	
+	}
+	#content>article>p{
+		color: #D1D1D1;
+	}
+	#content>h2{
+		padding-top: .5%;
+		padding-bottom: 6%;
+		
+	}
+	
+	#featured{
+		background: #065589 url("main_bg.png") repeat-y 53.333333333333333333333333333333% 0;	<!-- 2400px/4500px -->
+	}
+	#featured>h2{
+		padding-left: 5%;
+		padding-right: 1%;
+		padding-top: .5%;
+		padding-bottom: .5%;
+		
+		background-color: #4F4F4F;
+	}
+	#featuredR
+	{
+		width: 35%;
+		padding: 5%;
+		padding-bottom: 1%;
+		
+		margin-left: 10%;
+		
+		float: left;
+	}
+	#featuredL
+	{
+		width: 35%;
+		padding: 5%;
+		padding-bottom: 1%;
+		
+		float: left;
+	}
+	
+	#footer{
+		background-color: #B0723C;
+	}
+	
+	footer{
+		padding: 1%;
+	}
+	
+	h1{
+		color: #3A9031;
+		font-family: 'Economica', sans-serif;
+	}
+	
+	h2{
+		font-size: 1.5em;
+		color: #3A9031;
+		font-family: 'Economica', sans-serif;
+	}
+	
+	#leftpic{
+		position: absolute;
+			left: 5%;
+			
+		width: 6%;
+		overflow: hidden;
+	}
+	#leftpic>figure>img{
+		width: 100%;
+	}
+	
+	#more1{
+		width: 50%;
+	}
+	#more1>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more1>figure{
+		width: 35%;
+	}
+	#more1>figure>img{
+		width: 100%;
+	}
+	
+	#more2{
+		width: 50%;
+	}
+	#more2>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more2>figure{
+		width: 35%;
+	}
+	#more2>figure>img{
+		width: 100%;
+	}
+	
+	#more3{
+		width: 50%;
+	}
+	#more3>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more3>figure{
+		width: 35%;
+	}
+	#more3>figure>img{
+		width: 100%;
+	}
+	
+	#more4{
+		width: 50%;
+	}
+	#more4>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more4>figure{
+		width: 35%;
+	}
+	#more4>figure>img{
+		width: 100%;
+	}
+	
+	nav{
+		text-align: center;
+		padding: 1%;
+		
+		background-color: #B0723C;
+	}
+	nav>ul>li{
+		display: inline;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	nav>ul>li>a:link{
+		color: #914300;
+	}
+	
+	p{
+		font-family: 'Gudea', sans-serif;
+	}
+	
+	#page{
+		background-color: #4F4F4F;
+	}
+	
+	#rightpic{
+		position: absolute;
+			left: 85%;
+			
+		width: 5%;
+		overflow: hidden;
+	}
+	#rightpic>figure>img{
+		width: 100%;
+	}
+	
+	small{
+		font-family: 'Gudea', sans-serif;
+	}
+	
+	#title{
+		overflow: hidden;
+	}
+	#title>h1{
+		padding: 2%;
+		text-align: center;
+	}
+	
+	/* MEDIA QUERIES */
+	@media screen and (min-width: 1200px)
+	{
+		/*  SELF-CLEARING FLOATS  */
+		#useful:after,
+		#ads:after{
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+	
+		#ads{
+			padding-left: 2%;
+			position: relative;
+				top: 0;
+			width: 18%;
+			visibility: visible;
+			float: left;
+			
+			background-color: #4F4F4F;
+		}
+		#ads>figure{
+			width: 42%;
+			padding-top: 5.25%;
+			padding-bottom: 5.3%;
+		}
+		#ads>figure>img{
+			max-width: 100%;
+		}
+		#ads>figure>figcaption{
+			font-size: .75em;
+		}
+		
+		#useful{
+			width: 80%;
+			float: left;
+			
+			background-color: #4F4F4F;
+		}
+	}
+	
+	@media screen and (max-width: 900px)
+	{
+		#leftpic{
+			width: 8%;
+		}
+		
+		#rightpic{
+			width: 8%;
+		}
+	}
+	
+	@media screen and (max-width: 500px)
+	{
+		#featuredR{
+			margin-top: 5%;
+		}
+		#featuredL
+		{
+			margin-top: 5%;
+		}
+		
+		#leftpic{
+			width: 10%;
+		}
+		
+		p{
+			font-size: .9em;
+		}
+		
+		#rightpic{
+			width: 10%;
+		}
+	}
+	
+</style>
+
+<body>
+<div id=page>
+	<div id=title>
+		<div id=leftpic>
+			<figure>
+				<img src="titleclip2.png" />
+			</figure>
+		</div><!-- leftpic close -->
+		<div id=rightpic>
+			<figure>
+				<img src="titleclip1.png" />
+			</figure>
+		</div><!-- rightpic close -->
+		
+		<h1> Website Title </h1>
+	</div><!-- title close -->
+	
+	<div id=navbar>
+		<nav>
+			<ul>
+				<li> <a href="Home.html" style="text-decoration:none;">HOME</a>
+				<li> <a href="####" style="text-decoration:none;">REVIEWS</a>
+				<li> <a href="####" style="text-decoration:none;">SEARCH</a>
+			</ul>
+		</nav>
+	</div><!-- navbar close -->
+	
+<div id=useful>
+	<div id=featured>
+		<h2> Featured Reviews:	</h2>
+		
+		<div id=featuredL>
+			<div id=more1>
+				<figure>
+					<img src="DS3_thumb.jpg" />
+				</figure>
+				<p><a href="DS3page.html" style="text-decoration:none;"><strong>Dark Souls 3</strong></a></p>
+				<p>4/5	Mike Mahardy</p>
+			</div><!-- more1 close -->
+		
+			<div id=more2>
+				<figure>
+					<img src="W3_thumb.jpg" />
+				</figure>
+				<p><a href="W3page.html" style="text-decoration:none;"><strong>The Witcher 3</strong></a></p>
+				<p>5/5	Kevin VanOrd</p>
+			</div><!-- more2 close -->
+		</div><!-- featuredL close -->
+		
+		<div id=featuredR>
+			<div id=more3>
+				<figure>
+					<img src="SV_thumb.jpg" />
+				</figure>
+				<p><a href="SVpage.html" style="text-decoration:none;"><strong>Stardew Valley</strong></a></p>
+				<p>4/5	Kallie Plagge</p>
+			</div><!-- more3 close -->
+		
+			<div id=more4>
+				<figure>
+					<img src="CoD_thumb.png" />
+				</figure>
+				<p><a href="CoDpage.html" style="text-decoration:none;"><strong>CoD: Advanced Warfare</strong></a></p>
+				<p>4/5	Miguel Concepcion</p>
+			</div><!-- more4 close -->
+		</div><!-- featuredR close -->
+		
+	</div><!-- featured close -->
+	
+	<div id=content>
+		<h2> About Us:</h2>
+		
+		<article>
+			<p> &emsp; Here at WEBSITE TITLE we pride ourselves with providing helpful reviews so our readers can make informed decisions about their purchases. We try to have reviews up as soon as the game provides, it is our mission to give the best representation of the entire game rather than a possibly misrepresentative sliver. </p>
+		</article>
+	</div><!-- content close -->
+</div><!-- useful close -->
+
+<div id=ads>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+</div><!-- ads close -->
+
+<div id=footer>
+	<footer>
+		<small>&copy;2016 WEBSITE TITLE & CO.</small>
+		<small><br>Need Something? <a href="####">Contact Us!</a></small>
+	</footer>
+</div><!-- footer close -->
+</div><!-- page close -->
+</body>
+</html>

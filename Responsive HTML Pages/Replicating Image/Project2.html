@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+<meta charset=uft-8>
+<title>Mason Mollberg, Project 2</title>
+
+<link href=https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Lato' rel='stylesheet' type='text/css'>
+
+<script src="imgSizer.js"></script>
+
+</head>
+
+<style type="text/css">
+
+	*{margin:0; padding:0;} <!-- CSS Reset, I attempted use of the larger script provided but couldn't get it to work -->
+
+	/*-  SELF-CLEARING FLOATS  -*/
+	.mod:after,
+	.section:after{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+
+	
+	article{
+		background-color: #A6B3AA;
+	}
+
+	#blog{
+		background: #FFFEEC url("main_bg.png") repeat-y 53.333333333333333333333333333333% 0;	<!-- 2400px/4500px -->
+	}
+	#blog:after{
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+	}
+	
+	body{
+		margin: 5%;
+		background-color: #A6B3AA;
+	}
+	
+	#feature{
+		position: relative;
+		left: 20%;
+		bottom: 1em;
+		
+		width: 70.731707317073170731707317073171%;	<!-- 580/820 -->
+		
+		margin-left: 20%;
+		
+		background-color: #0DA5B0;
+	}
+	#feature>figure>img{
+		position: relative;
+		max-width: 100%;
+		z-index: 0;
+	}
+	#feature>h2{
+		position: relative;
+		width: 78.620689655172413793103448275862%;	<!-- 456/580 -->
+		height: 10%;
+		
+		margin-top: -3%;
+		z-index: 2;
+	}
+	#feature>p{
+		position: relative;
+		width: 54.878048780487804878048780487805%;	<!-- 450/580 -->
+		z-index: 1;
+		
+		color: #FFFEEC;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+	}
+	
+	h1{
+		padding-left: 14.634146341463414634146341463415%;<!-- 120/820 -->
+		padding: 1%;
+	
+		color: #FFFEEC;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		
+		background-color: #4F3F30;
+	}
+	h2{
+		padding-left: 1%;
+	
+		color: #FFFEEC;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		
+		background-color: #4F3F30;
+	}
+	h3{
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+	}
+	
+	#logo{
+		position: relative;
+			left: -7.3170731707317073170731707317073%;	<!-- 60/820 -->
+			top: -1.2195121951219512195121951219512%;	<!-- 10/820 -->
+	
+		width: 26.829268292682926829268292682927%;	<!-- 220/820 -->
+		
+		float: left;
+		background:none;
+		z-index: 5;
+	}
+	#logo>figure>img{
+		max-width: 100%;
+	}
+	
+	#main{
+		width: 48.780487804878048780487804878049%;	<!-- 460/820 - margin-left -->
+		margin-left: 7.3170731707317073170731707317073%; <!-- 60/820 -->
+		
+		float: left;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+	#main>article{
+		position: relative;
+			left: 15%;
+	
+		width: 80.952380952380952380952380952381%;	<!-- 340/420 -->
+	
+		font-size: 1em;
+		font-family: 'Lato', sans-serif;
+		background-color: #A6B3AA;
+	}
+	#main>article>figure{
+		position: relative;
+		left: 58.9%;
+	
+		width: 41.176470588235294117647058823529%;	<!-- 140/340 -->
+		float: right;
+		
+		overflow: hidden;
+		background: none;
+	}
+	#main>article>figure img{
+		display: block;
+		max-width: auto;
+	}
+	
+	#nav{
+		position: relative;
+		top: -5em;
+	
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		font-size: 1.0625em;	<!-- 17/16 -->
+	}
+	nav{
+		background-color: #0DA5B0;
+		
+		width: 100.97560975609756097560975609756%;	<!-- 828/820 -->
+	}
+	nav>ul>li{
+		position: relative;
+		left: 30%;
+		
+		display: inline;
+		z-index: 5;
+	}
+	nav>ul>li>a:link{
+		color: #FFFEEC; 
+		
+		padding-top: 2%;
+		padding-bottom: 2%;
+		margin-left: 2.7173913043478260869565217391304%;	<!-- 22.5/828 -->
+		margin-right: 2.7173913043478260869565217391304%; <!-- 22.5/828 -->
+		
+	}
+	nav>ul>li>a:visited{
+		color: #FFFEEC; 
+		
+		padding-top: 2%;
+		padding-bottom: 2%;
+		margin-left: 2.7173913043478260869565217391304%;	<!-- 22.5/828 -->
+		margin-right: 2.7173913043478260869565217391304%; <!-- 22.5/828 -->
+		
+	}
+	nav>ul>li>a:hover{
+		color: #F4821F; 
+		
+		padding-top: 2%;
+		padding-bottom: 2%;
+		margin-left: 2.7173913043478260869565217391304%;	<!-- 22.5/828 -->
+		margin-right: 2.7173913043478260869565217391304%; <!-- 22.5/828 -->
+		
+	}
+	
+	p{
+		padding: 2%;
+	}
+	
+	#page{
+		margin:36px auto;
+		width: 820px;
+	
+		background-color: #FFFEEC;
+	}
+	
+	#sidebar{
+		position: relative;
+			left: 62%;
+	
+		width: 29.268292682926829268292682926829%;	<!-- 320/820 - margin-left -->
+		margin-left: 9.7560975609756097560975609756098%; <!-- 80/820 -->
+
+
+		float: right;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+	#sidebar>ul{
+		width: 87.5%;	<!-- 280/320 -->
+		
+		font-size: 1em;
+		font-family: 'Lato', sans-serif;
+		background-color: #A6B3AA;
+	}
+</style>
+
+<body>
+<div id=page>
+	<div id=logo>
+		<figure>
+			<img src="logo.png" />
+		</figure>
+	</div><!-- logo close -->
+	<div id=nav>
+		<nav>
+			<ul>
+				<li> <a href="####" style="text-decoration:none;">ABOUT</a>
+				<li> <a href="####" style="text-decoration:none;">PORTFOLIO</a>
+				<li> <a href="####" style="text-decoration:none;">ARTICLES</a>
+				<li> <a href="####" style="text-decoration:none;">CONTACT US</a>
+			</ul>
+		</nav>
+	</div><!-- nav close -->
+	<div id=feature>
+		<figure>
+			<img src="featuresIceImg.png" />
+		</figure>
+		<h2>ICE HIKE! Adventure of a lifetime!</h2>
+		<p>&emsp;Ut tincidunt ex eu enim consequat ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras at elit lectus. Ut tincidunt dignissim egestas. Nam quis tortor aliquet enim scelerisque congue. Sed ultricies facilisis felis vitae scelerisque.</p>
+	</div><!-- feature close -->
+	
+	<div id=blog>
+	
+		<h1>Lorem Ipsum Dolor!</h1>
+	
+		<div id=main>
+			<article>
+				<p>&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit ultricies pulvinar. Suspendisse sollicitudin, orci vel lacinia molestie, risus est suscipit nunc, vitae imperdiet nulla lorem sit amet magna. Pellentesque bibendum laoreet lobortis. Mauris tristique rhoncus est, ut convallis nisi auctor vel. Mauris volutpat magna nisi, rutrum pretium quam eleifend id. Nulla pharetra lobortis mauris, at porta erat. Pellentesque viverra lectus quis pharetra semper. In hendrerit rutrum sodales. Duis odio leo, luctus sed tempor eget, porta a massa. In viverra porta sapien, sed molestie quam molestie sit amet.</p>
+
+				<p>&emsp;Donec a lacinia arcu. Fusce scelerisque quam nunc, eget consequat elit convallis quis. Donec id est nec sapien sodales pulvinar. Mauris eleifend, lectus vel dictum elementum, ipsum dolor faucibus eros, nec maximus tortor ex sit amet mauris. Fusce auctor et neque id mattis. Vestibulum cursus, purus eu pharetra eleifend, eros urna fermentum turpis, id porttitor dui eros et metus. Proin nisi leo, porta at venenatis nec, iaculis non orci. Quisque ultrices lectus justo, in accumsan leo maximus in. Maecenas turpis leo, tempor ut cursus et, fermentum at lacus.</p>
+				
+				<p>&emsp;Nullam placerat leo ac tempus laoreet. Nam euismod tristique neque at condimentum. Aenean quis massa vulputate, pellentesque magna eget, vulputate mi. Aliquam eget varius ex, sit amet fermentum urna. Ut hendrerit eget purus vitae consectetur. Curabitur sed nunc tempor, lacinia ligula non, lobortis nisi. Phasellus accumsan aliquet tellus vehicula euismod. Proin et malesuada diam, sed egestas orci.</p>
+
+				<figure>
+						<img src="default.jpg" />
+						<figcaption><small>Lorem ipsum dolor.</small></figcaption>
+				</figure>
+				
+			</article>
+		</div><!-- main close -->
+		<div id=sidebar>
+			<h2>SideBar Stuff</h2>
+			<ul>
+				<li><h3>Lorem</h3>
+					<p>Vestibulum cursus</p>
+					<hr />
+				<li><h3>Ipsum</h3>
+					<p> Duis odio leo</p>
+					<hr />
+				<li><h3>Dolor</h3>
+					<p>Vivamus</p>
+					<hr />
+				<li><h3>Sit</h3>
+					<p>Ut hendrerit eget </p>
+					<hr />
+				<li><h3>Amet</h3>
+					<p>Maecenas gravida</p>
+					<hr />
+			</ul>
+		</div><!-- sidebar close -->
+	</div><!-- blog close -->
+</div><!-- page close -->
+</body>
+
+</html>

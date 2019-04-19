@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+	<meta charset=uft-8>
+	<title>Mason Mollberg, DS3 Review</title>
+	<link href='https://fonts.googleapis.com/css?family=Gudea:400,400italic|Economica:700' rel='stylesheet' type='text/css'>
+	<script src="imgSizer.js"></script>
+</head>
+
+<style type="text/css">	
+
+	*{margin:0; padding:0;}
+
+	/*  SELF-CLEARING FLOATS  */
+	#title:after,
+	#featured:after{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	
+	#ads{
+		position: absolute;
+			top: -20em;
+		width: .1%;
+		visibility: hidden;
+		overflow: hidden;
+	}
+	#ads>figure{
+		width: 1%;
+	}
+	#ads>figure>img{
+		max-width: 100%;
+	}
+	#ads>figure>figcaption{
+		font-size: .01%;
+	}
+	
+	#content{
+		width: 40%;
+		margin: 2%;
+		margin-top: 0%;
+		padding: 1%;
+		padding-top: 0%;
+		padding-left: 3%;
+		
+		text-align: left;
+	
+	}
+	#content>article>p{
+		margin-top: 2%;
+		padding: 2%;
+		
+		color: #D1D1D1;
+	}
+	#content>h2{
+		position: relative;
+			left: -12.5%;
+	
+		padding-top: .5%;
+		padding-bottom: 6%;
+		padding-left: 3%;
+		width: 50%;
+		
+		color: BLACK;
+		background-color: #3A9031;
+	}
+	#content>h3{
+		position: relative;
+			left: -12.5%;
+			
+		padding-left: 3%;
+		width: 25%;
+	}
+	#content>article>figure>img{
+		position: relative;
+			left: 25%;
+			
+		margin: 1%;
+			
+		width: 125%;
+	}
+	
+	#featured{
+		background: #065589 url("main_bg.png") repeat-y 53.333333333333333333333333333333% 0;	<!-- 2400px/4500px -->
+	}
+	#featured>h2{
+		padding-left: 5%;
+		padding-right: 1%;
+		padding-top: .5%;
+		padding-bottom: .5%;
+	}
+	#featuredR
+	{
+		width: 35%;
+		padding: 5%;
+		padding-bottom: 1%;
+		
+		margin-left: 10%;
+		
+		float: left;
+	}
+	#featuredL
+	{
+		width: 35%;
+		padding: 5%;
+		padding-bottom: 1%;
+		
+		float: left;
+	}
+	
+	#footer{
+		background-color: #B0723C;
+	}
+	
+	footer{
+		padding: 1%;
+	}
+	
+	h1{
+		color: #3A9031;
+		font-family: 'Economica', sans-serif;
+	}
+	
+	h2{
+		font-size: 1.5em;
+		color: #3A9031;
+		font-family: 'Economica', sans-serif;
+	}
+	
+	h3{
+		background-color: #3A9031;
+		font-family: 'Economica', sans-serif;
+	}
+	
+	#intro{
+		height: 10em;
+	}
+	#intro>h1{
+		position: relative;
+			top: -2.5em;
+			
+		font-size: 3em;
+		text-align: center;
+	}
+	#intro>figure{
+		height: 100%;
+		overflow: hidden;
+	}
+	#intro>figure>img{
+		width: 100%;
+	}
+	
+	#leftpic{
+		position: absolute;
+			left: 5%;
+			
+		width: 6%;
+		overflow: hidden;
+	}
+	#leftpic>figure>img{
+		width: 100%;
+	}
+	
+	#more1{
+		width: 50%;
+	}
+	#more1>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more1>figure{
+		width: 35%;
+	}
+	#more1>figure>img{
+		width: 100%;
+	}
+	
+	#more2{
+		width: 50%;
+	}
+	#more2>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more2>figure{
+		width: 35%;
+	}
+	#more2>figure>img{
+		width: 100%;
+	}
+	
+	#more3{
+		width: 50%;
+	}
+	#more3>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more3>figure{
+		width: 35%;
+	}
+	#more3>figure>img{
+		width: 100%;
+	}
+	
+	#more4{
+		width: 50%;
+	}
+	#more4>p{
+		position: relative;
+			left: 40%;
+			top: -3em;
+	}
+	#more4>figure{
+		width: 35%;
+	}
+	#more4>figure>img{
+		width: 100%;
+	}
+	
+	nav{
+		text-align: center;
+		padding: 1%;
+		
+		background-color: #B0723C;
+	}
+	nav>ul>li{
+		display: inline;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	nav>ul>li>a:link{
+		color: #914300;
+	}
+	
+	p{
+		font-family: 'Gudea', sans-serif;
+	}
+	
+	#page{
+		background-color: #4F4F4F;
+	}
+	
+	#rightpic{
+		position: absolute;
+			left: 85%;
+			
+		width: 5%;
+		overflow: hidden;
+	}
+	#rightpic>figure>img{
+		width: 100%;
+	}
+	
+	small{
+		font-family: 'Gudea', sans-serif;
+	}
+	
+	#title{
+		overflow: hidden;
+	}
+	#title>h1{
+		padding: 2%;
+		text-align: center;
+	}
+	
+	/* MEDIA QUERIES */
+	@media screen and (min-width: 1200px)
+	{
+		/*  SELF-CLEARING FLOATS  */
+		#useful:after,
+		#ads:after{
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+	
+		#ads{
+			padding-left: 2%;
+			position: relative;
+				top: 0;
+			width: 18%;
+			visibility: visible;
+			float: left;
+			
+			background-color: #4F4F4F;
+		}
+		#ads>figure{
+			width: 85%;
+			padding-top: 21%;
+			padding-bottom: 21.1%;
+		}
+		#ads>figure>img{
+			max-width: 100%;
+		}
+		#ads>figure>figcaption{
+			font-size: 1em;
+		}
+		
+		#useful{
+			width: 80%;
+			float: left;
+			
+			background-color: #4F4F4F;
+		}
+	}
+	
+	@media screen and (max-width: 900px)
+	{
+		#content{
+			width: 75%;
+		}
+		#content>article>figure>img{
+			position: relative;
+			left: 0;
+			
+			margin: 2%;
+			
+			width: 100%;
+		}
+		#content>h2{
+			position: relative;
+				left: -8%;
+		}
+		#content>h3{
+			position: relative;
+				left: -8%;
+		}
+		
+		#leftpic{
+			width: 8%;
+		}
+		
+		#rightpic{
+			width: 8%;
+		}
+	}
+	
+	@media screen and (max-width: 500px)
+	{
+		#content{
+			width: 75%;
+		}
+		#content>article>figure>img{
+			position: relative;
+			left: 0;
+			
+			margin: 2%;
+			
+			width: 100%;
+		}
+		#content>h2{
+			position: relative;
+				left: 0%;
+
+			width: 100%;
+		}
+		#content>h3{
+			position: relative;
+				left: 0;
+
+			width: 100%;
+		}
+	
+		#featuredR{
+			margin-top: 5%;
+		}
+		#featuredL
+		{
+			margin-top: 5%;
+		}
+		
+		#leftpic{
+			width: 10%;
+		}
+		
+		p{
+			font-size: .9em;
+		}
+		
+		#rightpic{
+			width: 10%;
+		}
+	}
+	
+</style>
+
+<body>
+<div id=page>
+	<div id=title>
+		<div id=leftpic>
+			<figure>
+				<img src="titleclip2.png" />
+			</figure>
+		</div><!-- leftpic close -->
+		<div id=rightpic>
+			<figure>
+				<img src="titleclip1.png" />
+			</figure>
+		</div><!-- rightpic close -->
+		
+		<h1> Website Title </h1>
+	</div><!-- title close -->
+	
+	<div id=navbar>
+		<nav>
+			<ul>
+				<li> <a href="Home.html" style="text-decoration:none;">HOME</a>
+				<li> <a href="####" style="text-decoration:none;">REVIEWS</a>
+				<li> <a href="####" style="text-decoration:none;">SEARCH</a>
+			</ul>
+		</nav>
+	</div><!-- navbar close -->
+	
+	<div id=intro>
+		<figure>
+			<img src="DS3_thumb.jpg" />
+		</figure>
+		<h1>Dark Souls 3</h1>
+	</div><!-- intro close -->
+	
+<div id=useful>
+	<div id=content>
+		<h2> Mike Mahardy</h2>
+		<h3> 4 of 5</h3>
+		
+		<article>
+			<p> &emsp; Dark Souls III is a game of valleys and peaks, down through dungeons and up over castle walls. It's a plummet into places we shouldn't be--an escape from places we don't belong.</p>
+			<p> &emsp; But of course, we fight our way through the darkness, and find our way out. There are a few stumbles along the way, but in the end, Dark Souls III is well worth the riveting climb.</p>
+			<p> &emsp; Obstacles come in a variety of grotesque forms along the way: hulking giants and feral dogs; ancient knights and suicidal monks. Each enemy is a unique threat, and in groups, they grow more dynamic and punishing, demanding a flexible approach to combat. Dark Souls III is also clever in the way it plays on your false sense of comfort: many deaths come when you underestimate an enemy you've killed dozens of times before. The danger is always lurking. In the long run, survival requires patience.</p>
+			<p> &emsp; This is true throughout--there's a certain cadence to the combat, a certain pattern to each enemy, that's only discernible when you take time to observe it. Some enemies are weak near their sword arm--others are vulnerable from behind. Instinct may tell you to dodge every time a knight retracts its spear, but wasting stamina could lead to a quick death, forcing a restart at the most recent bonfire. Dark Souls III doesn't just teach you new skills--it forces you to forget ones you've already learned.</p>
+			<p> &emsp; The combat fluctuates between measured duels and frantic fights, but it almost always manages to keep things fair: you may be outnumbered and underpowered, but defeat is usually your fault. Sometimes, however, Dark Souls III breaks that rule. The camera often struggles to adjust in tight spaces, and the lock-on mechanic can be capricious, especially against Dark Souls III's more mobile, aggressive enemies. In boss fights that require precision, an imprecise camera becomes all the more of a hindrance.</p>
+			<p> &emsp; Despite the nuance and novelty of most bosses, however, some stick to familiar ground. Deja vu kicks in during several fights, when the monsters display move sets similar to those that came before them, diminishing the creativity displayed elsewhere. I brought down Pontiff Sullyvahn, the Consumed King, and even Aldrich--a boss the game purports to be one of my major targets--with tactics I had used hours earlier. These enemies feel recycled. They feel repetitive. The skin may be different, but the beast remains the same.</p>
+			<figure>
+				<img src="DS3_play.jpg" />
+			</figure>
+			<p> &emsp; One glaring design misstep involves a boss requiring a specific item to bring him down--that is, if you don't want to spend half an hour whittling away at his health. There is an earlier, obscure side quest that removes the need to use that item. But many players might not stumble upon it. Dark Souls is at its best when it rewards your growth, and tests your character's hard-earned experience. This boss fight doesn't--it has a very specific solution, despite the path you've taken to get there. This enemy, and the repetitive bosses, fly in the face of the progress you've made. They repeat patterns you've already mastered.</p>
+			<p> &emsp; But by and large, your growth is respected. It's that thread--that near constant sense of progress--that leads to Dark Souls III's greatest moments. We create our travelers. We make them stronger, faster, more resilient, turning them into fighters as we too learn the intricacies of this foreboding world. We can't slay the final boss until we conquer every enemy before it, so by the end of Dark Souls III, we've truly mastered something. That's a special feeling.</p>
+			<p> &emsp; There are several possible endings to Dark Souls III, and although most are anticlimactic, they drive home the loneliness of the paths we took. The old lords have abandoned their posts, and in the hunt to usurp them, we descend into those dark valleys, and climb those imposing peaks. This is the essence of Dark Souls III: periods of doubt, followed by great reward. The journey may be rocky, but there's a throne waiting at the end.</p>
+		</article>
+	</div><!-- content close -->
+
+	<div id=featured>
+		<h2> Featured Reviews:	</h2>
+		
+		<div id=featuredL>
+			<div id=more1>
+				<figure>
+					<img src="DS3_thumb.jpg" />
+				</figure>
+				<p><a href="DS3page.html" style="text-decoration:none;"><strong>Dark Souls 3</strong></a></p>
+				<p>4/5	Mike Mahardy</p>
+			</div><!-- more1 close -->
+		
+			<div id=more2>
+				<figure>
+					<img src="W3_thumb.jpg" />
+				</figure>
+				<p><a href="W3page.html" style="text-decoration:none;"><strong>The Witcher 3</strong></a></p>
+				<p>5/5	Kevin VanOrd</p>
+			</div><!-- more2 close -->
+		</div><!-- featuredL close -->
+		
+		<div id=featuredR>
+			<div id=more3>
+				<figure>
+					<img src="SV_thumb.jpg" />
+				</figure>
+				<p><a href="SVpage.html" style="text-decoration:none;"><strong>Stardew Valley</strong></a></p>
+				<p>4/5	Kallie Plagge</p>
+			</div><!-- more3 close -->
+		
+			<div id=more4>
+				<figure>
+					<img src="CoD_thumb.png" />
+				</figure>
+				<p><a href="CoDpage.html" style="text-decoration:none;"><strong>CoD: Advanced Warfare</strong></a></p>
+				<p>4/5	Miguel Concepcion</p>
+			</div><!-- more4 close -->
+		</div><!-- featuredR close -->
+		
+	</div><!-- featured close -->
+</div><!-- useful close -->
+
+<div id=ads>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="AdSpace.png" />
+		<figcaption>
+			<p> Lorem ipsum dolor set amet.
+		</figcaption>
+	</figure>
+</div><!-- ads close -->
+
+<div id=footer>
+	<footer>
+		<small>&copy;2016 WEBSITE TITLE & CO.</small>
+		<small><br>Review stolen from www.gamespot.com</small>
+		<small><br>Need Something? <a href="####">Contact Us!</a></small>
+	</footer>
+</div><!-- footer close -->
+</div><!-- page close -->
+</body>
+</html>
